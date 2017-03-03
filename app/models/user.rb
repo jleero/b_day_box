@@ -27,4 +27,5 @@ class User < ActiveRecord::Base
   end
 
 
+  validates_formatting_of :zip_code, using: :us_zip
 end
